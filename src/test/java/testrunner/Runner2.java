@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
     glue = "com.stepdefenation",
     dryRun = false,
     monochrome = true,
-    plugin = {"pretty", "html:target/cucumber-reports.html", "json:target/cucumber.json"}
+    plugin = {"pretty", "html:test-output/cucumber-report.html", "json:target/cucumber.json", "rerun:target/failed_scenarios.txt"}
 )
 public class Runner2 {
 }

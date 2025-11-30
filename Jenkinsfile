@@ -1,9 +1,14 @@
 pipeline {
     agent any
 
+    tools {
+        jdk 'JAVA_HOME'   
+    }
+
     triggers {
         pollSCM('H/2 * * * *')
     }
+
     stages {
 
         stage('Build') {
